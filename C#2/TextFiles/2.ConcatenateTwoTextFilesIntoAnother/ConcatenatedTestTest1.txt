@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.IO.IsolatedStorage;
+
+namespace _2.ConcatenateTwoTextFilesIntoAnother
+{
+    class Program
+    {
+        static void ConcatenateFiles(string files, StreamWriter concatenatedFile )
+        {
+
+            using (StreamReader reader = new StreamReader(files))
+            {
+                for (string line; (line = reader.ReadLine()) != null; )
+                {
+                    concatenatedFile.WriteLine(line);
+                }
+                
+            }
+        }
+ 
+        static void Main(string[] args)
+        {
+           string [] files = {@"../../Program.cs", @"../../Program.cs"};
+           using (StreamWriter writer = new StreamWriter(@"../../ConcatenatedTestTest1.txt"))
+           {
+               foreach (string file in files)
+               {
+                   ConcatenateFiles(file, writer);
+                   Console.WriteLine(file);
+               }
+           }
+        
+        }
+    }
+
+}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.IO.IsolatedStorage;
+
+namespace _2.ConcatenateTwoTextFilesIntoAnother
+{
+    class Program
+    {
+        static void ConcatenateFiles(string files, StreamWriter concatenatedFile )
+        {
+
+            using (StreamReader reader = new StreamReader(files))
+            {
+                for (string line; (line = reader.ReadLine()) != null; )
+                {
+                    concatenatedFile.WriteLine(line);
+                }
+                
+            }
+        }
+ 
+        static void Main(string[] args)
+        {
+           string [] files = {@"../../Program.cs", @"../../Program.cs"};
+           using (StreamWriter writer = new StreamWriter(@"../../ConcatenatedTestTest1.txt"))
+           {
+               foreach (string file in files)
+               {
+                   ConcatenateFiles(file, writer);
+                   Console.WriteLine(file);
+               }
+           }
+        
+        }
+    }
+
+}
