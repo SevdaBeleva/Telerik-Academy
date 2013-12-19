@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings - Object Wrapper</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 1: Write a JavaScript function reverses string and returns itExample: "sample"  "elpmas".
+
+        function reverseString(string) {
+
+            var reversed = '';
+            for (var i = string.length - 1; i >= 0; i--) {  // use for loop to reverse  the string starting from the last index
+
+                reversed += string[i];     
+            }
+            return reversed;
+        }
+        console.log(reverseString("simple string!"));  // test the function
+    </script>
+</body>
+</html>

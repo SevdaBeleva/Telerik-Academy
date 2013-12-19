@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings - Object Wrapper</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 2: Write a JavaScript function to check if in a given expression the brackets are put correctly.
+        // Example of correct expression: ((a+b)/5-d).
+        // Example of incorrect expression: )(a+b)).
+
+        function checkBrackets(string) {
+            var counterOpen = 0;
+            var counterClose = 0;
+
+            if ((string[0] === ')') || (string.length - 1 === '(')) {
+                return 'Invalid expression!';
+            }
+            else {
+                for (var i = 0; i < string.length; i++) {
+
+                    if (string[i] === ')') {
+                        counterOpen++;          // count open brackets
+                    }
+
+                    if (string[i] === '(') {
+                        counterClose++;         // count close brackets
+                    } 
+                }
+
+                if (counterOpen === counterClose) {
+                    return 'Expression is valid!';
+                }
+                else {
+                    return 'Invalid expression!';
+                }
+            }
+        }
+        console.log(checkBrackets('()()'));
+    </script>
+</body>
+</html>

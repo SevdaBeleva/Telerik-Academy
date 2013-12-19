@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <a href="#" onclick="FindMinMax()">Find min and max number of sequence</a>
+    <br/>
+    <br/>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function FindMinMax() {
+            var array = [12,4,156,3,67,2,89,45,9];
+            var min = array[0];   // set min element to be index[0] in order to find min element 
+            var max = array[0];     // set max element to be index[0] in order to find max element
+            for (var i = 1; i < array.length; i++) {
+                
+                if (min > array[i])          // find min element
+                {
+                    min = array[i];
+                }
+            }
+            jsConsole.writeLine("Min element in the array is: " + min);
+
+            for (var i = 0; i < array.length; i++) {
+
+                if (max < array[i])    // find max element
+                {
+                    max = array[i];
+                }
+            }
+            jsConsole.writeLine("Max element in the array is: " + max)
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        var array = [12, 2, 3, 12, 4, 56, 7, 89];
+
+        var count = 0;
+        var maxCount = 0;
+        var maxNum = 0;
+
+        for (var i = 0; i < array.length - 1; i++) {
+            count = 0;
+            for (var j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j]) {
+                    count++;
+                }
+                if (count > maxCount) {
+                    maxCount = count;
+                    maxNum = array[i];
+                }
+            }
+            
+        }
+        
+        </script>
+</body>
+</html>

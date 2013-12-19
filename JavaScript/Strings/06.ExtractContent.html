@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings - Object Wrapper</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <div> life is wonderful wonderful </div>
+    <div>()() make your life easy</div>
+    <script src="js-console.js"></script>
+    <script> 
+        //task 6: Write a function that extracts the content of a html page given as text. The function should return anything that is in a tag, without the tags:
+        function extractContentFromHtml() {
+            var text = document.body.innerText;  // it will take only the content from html page, but not if is in a string/text
+            return text;
+        }
+        console.log(extractContentFromHtml());
+    </script>
+</body>
+</html>

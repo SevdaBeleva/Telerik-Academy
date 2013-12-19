@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function Solve(args) {
+            String.prototype.fulltrim = function () { return this.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g, '').replace(/\s+/g, ' '); };
+            var scopeLevel = 0;
+            var lines = args[0];
+            var separator = args[1];
+            var indexOfOpenBracket = 0;
+            var indexOfCloseBracket = 0;
+            var resultArray = [];
+            var inputLines = new Array(lines)
+            var i = 0, j = 0;
+            var resultString = "";
+            for (i = 0; i < lines; i++) {
+                inputLines[i] = args[i + 2].fulltrim();
+            }
+
+            for (i = 0; i < lines; i++) {
+                resultString += printSeparator(separator, scopeLevel);
+                for (j = 0; j< inputLines[i].length; j++) {
+                    if (inputLines[i][j] === '{') {
+                        
+                        resultString += isNextSymBracket(inputLines, i, j);
+                            resultString += printSeparator(separator, scopeLevel);
+                            resultString += '{\r\n';
+                            scopeLevel++;
+                        
+                    }
+
+                    else if (inputLines[i][j] === '}') {
+                        scopeLevel--;
+                        resultString += isNextSymBracket(inputLines, i, j);
+                        resultString += printSeparator(separator, scopeLevel);
+                        resultString += '}\r\n';     
+                    }
+                    else {
+                        resultString += inputLines[i][j];
+                    }
+                }
+                return resultString;
+            }
+
+            function isNextSymBracket(inputLines, i, j) {
+                if (inputLines[i][j + 1] !== '{' && inputLines[i][j + 1] !== '}') {
+                    return '\r\n';
+                }
+                else return '';
+            }
+            
+        }
+        
+        function printSeparator(separator, level) {
+            var i, result = [];
+            for (i = 0; i < level; i++) {
+                result.push(separator);
+            }
+            return String(result.join(""));
+        }
+        console.log(Solve([3, ">>", "{a{", "}", "}"]));
+        </script>
+</body>
+</html>

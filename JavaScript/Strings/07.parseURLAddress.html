@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />
+      
+</head>
+<body>
+   <div id="js-console"></div>
+   <script src="js-console.js"> </script>
+    <script>
+        // task 7: Write a script that parses an URL address given in the format:
+
+        function parseURL(link) {
+            var a = document.createElement('a');
+            a.href = link;
+            console.log('{' + 'protocol: ' + '\"' + a.protocol + "\"," ); // use the built-in fnction
+            console.log('server: ' + '\"' + a.host + "\",");              // use the built-in fnction
+            console.log('resource: ' + '\"' + a.pathname + '\"}');      // use the built-in fnction
+            return a;
+        }
+        console.log(parseURL("http://www.devbg.org/forum/index.php"));
+     </script>   
+</body>
+</html>

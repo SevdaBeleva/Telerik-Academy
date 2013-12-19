@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>  
+        // task 5: Write a function that counts how many times given number appears in given array. 
+        //Write a test function to check if the function is working correctly.  
+        function numberCount(number, array) {
+            var counter = 0;
+
+            for (var i = 0; i < array.length; i++) {
+                if (number === array[i])  // compare the number with each element in the array
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+
+        // test  the function
+        var array = [12, 7, 4, 41, 1, 12, 12, 12, 12];
+        jsConsole.writeLine(numberCount(12, array));   
+    </script>
+</body>
+</html>

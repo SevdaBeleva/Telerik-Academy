@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+
+        // task 2: Write a function that reverses the digits of given decimal number. Example: 256  652
+        function reverseDigits(number) {
+            do {
+                var newNumber = number % 10;
+                jsConsole.writeLine(newNumber);
+                number = Math.floor(number / 10);
+            }
+            while (number > 0)
+        }
+
+        jsConsole.writeLine(reverseDigits(4441234567890));  
+    </script>
+</body>
+</html>

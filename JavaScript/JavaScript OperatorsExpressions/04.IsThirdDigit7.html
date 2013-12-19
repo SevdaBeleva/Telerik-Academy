@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="tb-number"> Number: </label>
+    <input type="text" id="tb-number"/>
+    <br/>
+    <a href="#" onclick="IsThirdDigit7ButtonClick()">Is third digit 7</a>
+    <br/>
+    <br/>
+    <div id="js-console"></div>
+    <script src ="js-console.js"></script>
+    <script>
+        function IsThirdDigit7ButtonClick() {
+            var number = jsConsole.readInteger("#tb-number")
+            var newNumber = 0;
+            var result = true;
+            
+            newNumber = number / 100;         
+            newNumber = newNumber % 10;          
+
+            jsConsole.writeLine("Is third digit 7? " + newNumber);
+
+            if (newNumber == 7) {
+                jsConsole.writeLine(result);      // to do
+            }                                     // ask teacher why the result sucks?
+            else {                                // it returns always false, because the result is always not integer
+                result = false;
+                jsConsole.writeLine(result);
+            }
+        }
+    </script>
+</body>
+</html>

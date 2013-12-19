@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 6: Write a function that checks if the element at given position
+        // in given array of integers is bigger than its two neighbors (when such exist).
+
+        function isBigger(index, array) {
+
+            return (array[index] > array[index - 1]) && (array[index] > array[index + 1]) ? true : jsConsole.writeLine("false"); // can not print just : false
+            // don''t know why
+        }
+        // test the function 
+        var array = [12, 7, 4, 41, 1, 12, 12, 12, 12];
+        jsConsole.writeLine(isBigger(3, array)); 
+
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+<link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+     <script>
+         var array = [21, 21, 21, 34, 2, 3, 8, 7];
+         var length = 1;
+         var bestLength = 0;
+         var lastIndex = 0;
+
+         for (var i = 0; i < array.length - 1; i++) {
+             if (array[i] < array[i + 1]) {
+                 length++;
+             }
+             else {
+                 if (length > bestLength)
+                 {
+                     bestLength = length;
+                     lastIndex = i;
+                 }
+                 length = 1;
+             }
+         }
+         jsConsole.writeLine("Max sequence of increasing elements: ")
+         for (var i = lastIndex - bestLength + 1; i < lastIndex + 1; i++) {
+             jsConsole.write(array[i] + ", ");
+
+         }   
+     </script>
+</body>
+</html>

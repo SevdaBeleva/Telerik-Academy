@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="tb-x"> X: </label>
+    <input type="text" id="tb-x"/>
+    <br/>
+    <label for="tb-y"> Y: </label>
+    <input type="text" id="tb-y"/>
+    <br/>
+    <a href="#" onclick="InCircleOutOfRectangleButtonClick()">In Circle/ Out Rectangle</a>
+    <br/>
+    <br/>
+    <div id="js-console"></div>
+    <script src ="js-console.js"></script>
+    <script>
+        function InCircleOutOfRectangleButtonClick() {
+            // Input data for the Circle
+           var center = 1.1;
+           var radius = 3;
+
+            // Input data for the point x,y
+           var x = jsConsole.readFloat("#tb-x");
+           var y = jsConsole.readFloat("#tb-y")
+
+            // Input data for the rectangle
+           var top = 1;
+           var left = -1;
+           var width = 6;
+           var height = 2;
+
+           // boolean expression for finding the point
+            var result = true;
+            if ((Math.Sqrt((x * x) + (y * y)) <= radius) && (top > 1 && left > -1) && (width > 6 && height > 2))
+            {
+
+               jsConsole.writeLine("Point (x, y) within a circle K: {0}", result);
+            }
+            else
+            {
+                result = false;
+               jsConsole.writeLine("Point (x, y) within a circle K: {0}", result);
+            }
+        }
+        
+    </script>
+</body>
+</html>

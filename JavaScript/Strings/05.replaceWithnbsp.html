@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings - Object Wrapper</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 5: Write a function that replaces non breaking white-spaces in a text with &nbsp;
+
+         function replace(string) {
+            var escapedStr = string.replace(/" "/g, '&nbsp;');
+            return escapedStr;
+         }
+       
+         console.log(replace("this is"));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 3: Write a function that finds all the occurrences of word in a text
+    
+        function countWords(word, array) {   // this function is a case sensitive
+            var counter = 0;
+            for (var i = 0; i < array.length; i++){
+                    if (word === array[i])  // compare the word with each element in the array
+                    {
+                        counter++;
+                    }
+                }  
+                return counter;
+        }
+
+        var text = "Baby, baby, baby, sexy, baby, baby";
+        var textArray = new Array();
+        textArray = text.split(/,| /);
+        
+        jsConsole.writeLine(countWords("baby", textArray));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings - Object Wrapper</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 3: Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+        function countSubstring(string) {
+           
+            var count = string.match(/is/g);
+            return count.length;
+        }
+        console.log("The result is: " + countSubstring('this is my life'));
+    </script>
+</body>
+</html>

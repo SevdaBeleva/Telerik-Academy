@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="a">Coefficient a:</label>
+    <input type="text" id="a"/>
+    <br/>
+    <label for="b">Coefficient b:</label>
+    <input type="text" id="b"/>
+    <br/>
+    <label for="c">Coefficient c:</label>
+    <input type="text" id="c"/>
+    <br/>
+    <a href="#" onclick="Roots()">Roots:</a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function Roots() {
+            var a = jsConsole.readInteger("#a");
+            var b = jsConsole.readInteger("#b");
+            var c = jsConsole.readInteger("#c");
+
+            var D;   // diskriminnata
+            var x1;  // pyrvi koren
+            var x2;  //  vtori koren
+
+            D = ((b * b) - 4 * (a * c));     // namirane na diskriminanta
+            x1 = (-b + Math.sqrt((b * b) - 4 * (a * c))) / (2 * a);  //  namirane na pyrvi koren
+            x2 = (-b - Math.sqrt((b * b) - 4 * (a * c))) / (2 * a);  // namirane na vtori koren
+
+
+            if (D < 0)
+            {
+                jsConsole.writeLine("Diskriminanta: " + D + " The quadratic equation has no real roots!");
+            }
+
+            if (D == 0)
+            {
+                var x = -b / (2 * a);
+                jsConsole.writeLine("Diskriminanta: " + D);
+                jsConsole.writeLine("The quadratic equation has one root: x = " + x);
+            }
+            if (D > 0)
+            {
+                jsConsole.writeLine("Diskriminanta: " + D);
+                jsConsole.writeLine("The quadratic equation has two roots:") 
+                jsConsole.writeLine("x1: " + x1);
+                jsConsole.writeLine("x2: " + x2);
+            }
+
+        }
+        </script>
+</body>
+</html>

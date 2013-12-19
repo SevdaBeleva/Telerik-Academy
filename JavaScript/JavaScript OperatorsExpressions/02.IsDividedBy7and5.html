@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="tb-number"> Number: </label>
+    <input type="text" id="tb-number"/>
+    <br/>
+    <a href="#" onclick="IsDividedBy7and5ButtonClick()">Divided by 7 and 5??</a>
+    <br/>
+    <br/>
+    <div id="js-console"></div>
+    <script src ="js-console.js"></script>
+    <script>
+        function IsDividedBy7and5ButtonClick() {
+            var number = jsConsole.readFloat("#tb-number")
+            var result = true;
+            jsConsole.writeLine("the number " + number + " is divided by 7 and 5 at the same time?")
+            
+                if (number % 7 == 0 && number % 5 ==0) {   // Check if number is divided by 7 and 5 at the same time 
+                    jsConsole.writeLine(result);
+                }
+                else {
+                    jsConsole.writeLine(result = false);
+                }
+
+            
+        }
+    </script>
+</body>
+</html>

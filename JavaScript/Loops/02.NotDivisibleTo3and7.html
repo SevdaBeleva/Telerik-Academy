@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="number" >Number:</label>
+    <input type="text" id="number"/>
+    <a href="#" onclick="Divisible()">Divisible by 3 and 7: </a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function Divisible() {
+
+            var number = jsConsole.readInteger("#number");
+            for (var i = 0; i <= number; i++) {   
+                if (i % 21 != 0) {                     // Find number that is not divisible by 3 and 7 at the same time
+                    jsConsole.writeLine(i);
+                }
+            }
+
+        }
+
+        </script>
+
+</body>
+</html>

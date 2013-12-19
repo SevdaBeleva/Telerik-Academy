@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="tb-number"> Number: </label>
+    <input type="text" id="tb-number"/>
+    <br/>
+    <a href="#" onclick="findOddOrEven()">Odd or even</a>
+    <br/>
+    <br/>
+    <div id="js-console"></div>
+    <script src ="js-console.js"></script>
+    <script>
+        function findOddOrEven() {
+            var number = jsConsole.readFloat("#tb-number");
+             
+                 if (number % 2 == 0) {  // Check f number is divided by 2 without remainder. 
+                     jsConsole.writeLine("the number " + number + " is even");  // If yes - number is even
+                 }
+                 else {
+                     jsConsole.writeLine("the number " + number + " is odd");   // If not - number is odd
+                 }
+                
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+<link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="a"> a:</label>
+    <input type="text" id="a"/>
+    <br/>
+    <label for="b"> b:</label>
+    <input type="text" id="b"/>
+    <br/>
+    <label for="c"> c:</label>
+    <input type="text" id="c"/>
+    <br/>
+    <label for="d"> d:</label>
+    <input type="text" id="d"/>
+    <br/>
+    <label for="e"> e:</label>
+    <input type="text" id="e"/>
+    <br/>
+    <a href="#" onclick="FindBiggestOf5()"> max number is:</a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function FindBiggestOf5() {
+            var a = jsConsole.readInteger("#a");
+            var b = jsConsole.readInteger("#b");
+            var c = jsConsole.readInteger("#c");
+            var d = jsConsole.readInteger("#d");
+            var e = jsConsole.readInteger("#e");
+
+            var biggest = a;
+
+            if (b > a)
+            {
+                biggest = b;
+            }
+            if (c > b && c > a && c > d &&  c > e)
+            {
+                biggest = c;
+            }
+            if (d > c && d > a && d > b && d > e)
+            {
+                biggest = d;
+            }
+            if (e > d && e > a && e > c && e > b)
+            {
+                biggest = e;
+            }
+            jsConsole.writeLine(biggest);
+        }
+
+     </script>
+
+</body>
+</html>

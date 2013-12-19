@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="first-number">First number:</label>
+    <input type="text" id="first-number"/>
+    <br/>
+    <label for="second-number">Second number:</label>
+    <input type="text" id="second-number"/>
+    <br/>
+    <label for="third-number">Third number:</label>
+    <input type="text" id="third-number"/>
+    <br/>
+    <a href="#" onclick="FindBiggest()">Find biggest</a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function FindBiggest() {
+            var firstNumber = jsConsole.readInteger("#first-number");
+            var secondNumber = jsConsole.readInteger("#second-number");
+            var thirdNumber = jsConsole.readInteger("#third-number");
+            var biggest = firstNumber;
+
+            if (biggest < secondNumber)
+            {
+                biggest = secondNumber;
+            }
+            if (biggest < thirdNumber)
+            {
+                biggest = thirdNumber;
+            }
+            jsConsole.writeLine("Biggest number: " + biggest);
+
+        }
+        </script>
+</body>
+</html>

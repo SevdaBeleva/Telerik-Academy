@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="first-number">Number:</label>
+    <input type="text" id="first-number"/> 
+    <br/>
+    <label for="second-number">First number:</label>
+    <input type="text" id="second-number"/>
+    <br/>
+    <a href="#" onclick="ExchangeValues()">Result</a>
+    <br/>
+    <div id="js-console"> </div>
+    <script src="js-console.js"></script>
+    
+    <br/>
+    <script>
+        function ExchangeValues() {
+            var firstNumber = jsConsole.readInteger("#first-number");
+            var secondNumber = jsConsole.readInteger("#second-number");
+            var bigger = firstNumber;
+
+            if (secondNumber > bigger)
+            {
+                bigger = secondNumber;
+            }
+            jsConsole.writeLine("The bigger number is: " + bigger);
+        }
+    </script>
+</body>
+</html>

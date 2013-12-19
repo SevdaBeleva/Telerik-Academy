@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function Solve(args) {
+            var number = args[0];
+            var array = generareArray();
+            var i, check = '0', result = [], finalResult = 0;
+            for (i = 0; i < number.length; i++) {
+                check = number[i];
+                if (number[i].toLowerCase === number[i]) {
+                    check += number[i+1];
+                    i++;
+                }
+                result.push(array.lastIndexOf(check));
+            }
+            for (i = result.length-1; i >= 0 ; i--) {
+                finalResult += result[i] * Math.pow(168, result.length - 1 -i);
+
+            }
+            return finalResult;
+        }
+        function generareArray() {
+            var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            var array = new Array(168);
+            for (i = 0; i < array.length; i++) {
+                if (i < letters.length) {
+                    array[i] = letters[i];
+                }
+                else {
+                    array[i] = letters[Math.floor(i / 26)-1].toLowerCase() + letters[i % 26];
+                }       
+            }
+            return array;
+        }
+        console.log(Solve(["bM"]));
+        </script>
+</body>
+</html>

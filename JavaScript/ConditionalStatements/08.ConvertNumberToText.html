@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+<link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="number">Number:</label>
+    <input type="text" id="number"/>
+    <br/>
+    <a href="#" onclick="ConvertToText()">Convert to text</a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function ConvertToText(){
+        
+            var number = jsConsole.readInteger("#number");
+            var  array = [ "zero", "one", "two", "three", "four", "five", "six", "seven", 
+                 "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", 
+                 "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", 
+                 "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", 
+                 "hundred" ];
+      
+            if (number)
+            {
+                if (number > 99 && number < 1000)
+                {
+                    jsConsole.writeLine(number / (number % 1000 / 100) == 100 ?
+                        array[number % 1000 / 100] + " " + array[array.Length - 1] : array[number % 1000 / 100] +
+                        " " + array[array.Length - 1] + " " + (number % 100 / 10 == 0 ? "and" +
+                        " " + array[number % 10] : (number % 100 < 21 ? "and " + array[(number % 100)] : "and " +
+                        array[18 + (number % 100 / 10)] + " " + (number % 10 != 0 ? array[number % 10] : " "))));
+                }
+                else if (number < 100) {
+                    jsConsole.writeLine(number % 100 / 10 == 0 ?
+                          array[number % 10] : (number < 21 ? array[number] : array[18 + (number % 100 / 10)] +
+                          " " + (number % 10 != 0 ? array[number % 10] : " ")));
+                }
+            }
+        }
+        </script>
+</body>
+</html>

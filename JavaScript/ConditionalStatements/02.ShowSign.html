@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="first-number">First number:</label>
+    <input type="text" id="first-number"/>
+    <br/>
+
+    <label for="second-number">Second number:</label>
+    <input type="text" id="second-number"/>
+    <br/>
+
+    <label for="third-number">Third number:</label>
+    <input type="text" id="third-number"/>
+    <br/>
+    <a href="#" onclick="ShowSign()"> sign </a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+
+    <script>
+        function ShowSign() {
+            var firstNumber = jsConsole.readFloat("#first-number");
+            var secondNumber = jsConsole.readFloat("#second-number");
+            var thirdNumber = jsConsole.readFloat("#third-number");
+            var count = 0;
+
+            if (firstNumber < 0)
+            { count++; }
+
+            if (secondNumber < 0)
+            { count++; }
+
+            if (thirdNumber < 0)
+            { count++; }
+
+            if (count % 2 == 0) {
+                jsConsole.writeLine("Sign of product: + ");
+            }
+
+            else {
+                jsConsole.writeLine("Sign of product is: -");
+            }
+
+        }
+        </script>
+</body>
+</html>

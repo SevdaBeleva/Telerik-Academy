@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings</title>
+    <link href="js-console.css" type="text/css" rel="stylesheet" />   
+</head>
+<body>
+   <div id="js-console"></div>
+   <script src="js-console.js"> </script>
+
+    <a href="#"></a>   // this is the test hyperlink
+    <script>
+        // task 8: Write a JavaScript function that replaces in a HTML document
+        //given as string all the tags <a href="…">…</a> with corresponding tags [URL=…]…/URL].
+
+        function replaceTags() {
+            var text = document.body.innerHTML;
+            text = text.replace("<a href=", "[URL=").replace("</a>", "[/URL]");
+            return text;
+        }
+
+        console.log(replaceTags());
+     </script>  
+    
+</body>
+</html>

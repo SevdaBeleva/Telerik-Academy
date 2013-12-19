@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="tb-x"> X: </label>
+    <input type="text" id="tb-x"/>
+    <br/>
+    <label for="tb-y"> Y: </label>
+    <input type="text" id="tb-y"/>
+    <br/>
+    <a href="#" onclick="IsPrintWithinCircleButtonClick()"> print within Circle? </a>
+    <br/>
+    <br/>
+    <div id="js-console"></div>
+    <script src ="js-console.js"></script>
+    <script>
+        function IsPrintWithinCircleButtonClick() {
+            var radius = 5;
+            var x = jsConsole.readFloat("#tb-x");
+            var y = jsConsole.readFloat("#tb-y");
+            var result = false;
+            
+            if (Math.Sqrt((x * x) + (y * y)) <= radius * radius) {
+                result = true;
+                jsConsole.writeLine("Point (x, y) within a circle K: " + result);
+            }
+            else {
+                jsConsole.writeLine("Point (x, y) within a circle K: " + result);
+            }
+        }
+    </script>
+</body>
+</html>

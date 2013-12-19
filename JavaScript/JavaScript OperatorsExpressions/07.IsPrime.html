@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <label for="tb-number">Number: </label>
+    <input type="text" id="tb-number"/>
+    <br/>
+    <a href="#" onclick="IsPrimeButtonClick()">Is prime</a>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        function IsPrimeButtonClick() {
+            
+            var number = jsConsole.readInteger("#tb-number");
+            var maxDivider = Math.sqrt(number);
+            var isPrime = true;
+            
+            for (var minDivider = 2; minDivider <= maxDivider; minDivider++) {
+                if (number % minDivider == 0)
+                {
+                    isPrime = false;
+               }  
+            }
+            jsConsole.writeLine("Number " + number + " is prime: " + isPrime);
+           
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+<link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+     <script>
+
+         var firstArray = ['a', 'r', 'w', 'v', 'q'];
+         var secondArray = ['a', 'r', 'w', 'v','q'];
+         var equals = true;
+         
+         if (firstArray.length != secondArray.length) {
+             jsConsole.writeLine("Arrays are not equal. The size is different!")
+         }
+         
+         for (var i = 0; i < firstArray.length; i++) {
+
+                 if (firstArray[i] != secondArray[i]) {
+                     equals = false;
+                 }
+             }
+            jsConsole.writeLine("Arrays equals?: " + equals);
+             
+     </script>
+</body>
+</html>

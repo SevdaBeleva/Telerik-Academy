@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="js-console.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="js-console.js"></script>
+    <script>
+        // task 7: Write a Function that returns the index of the first element in array that is bigger than its neighbors, 
+        //or -1, if there’s no such element. Use the function from the previous exercise.
+
+        function isBiggerYoung(array) {
+            for (var i = 1; i < array.length - 2; i++) {
+
+                if (array[i] > array[i - 1] && array[i] > array[i + 1]) {
+                    return i;
+                    break;
+                }
+            }
+            return -1;
+        }
+        // test the function 
+        var array = [12, 7, 4, 41, 1, 12, 12, 12, 12];
+        jsConsole.writeLine(isBiggerYoung(array));
+
+    </script>
+</body>
+</html>
