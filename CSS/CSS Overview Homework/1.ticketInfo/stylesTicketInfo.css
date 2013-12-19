@@ -1,0 +1,78 @@
+﻿
+table
+{
+    background-color: #595959;
+    opacity: 0.9;
+    width: 455px;
+    height: 100px;
+    padding: 0px;
+    font-weight: bold;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 0px;
+    
+}
+table td
+{
+    font-family: Arial;
+    width: 220px;
+    padding: 10px;
+    padding: 15px;
+    border:none;
+    line-height: 0px;    
+}
+#ticket
+{
+    font-family: Arial;
+    font-size: x-large;
+    color: #ABAFA5;
+    font-weight: normal;
+    padding-top: 18px;
+}
+.firstColumn
+{
+    color: #E6E6E6;
+    font-style: italic;
+    font-size: initial;
+    width: 145px;
+    
+}
+.secondColumn
+{
+    width: 300px;
+    text-align: left;
+    vertical-align: middle;
+}
+.yellow
+{
+   color: #faf6a9;
+}
+#yellow
+{
+    color: #faf6a9;
+}
+.grey
+{
+    color: #ABAFA5;
+}
+#active
+{
+    color: red;
+    font-size: larger;
+}
+#status
+{
+    color: #DC6A25;
+    font-weight: bold;
+    font-size: larger;
+}
+#circle
+{
+    display:inline-block;
+    background-color: #71B47A;
+    width: 13px;
+    height: 13px;
+    border-radius: 25px;
+}
+

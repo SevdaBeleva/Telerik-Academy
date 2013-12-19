@@ -1,0 +1,81 @@
+﻿table
+{
+    border:none;
+    border-collapse: collapse;
+    border-spacing:0px;
+    padding:0px;  
+}
+table td
+{
+    font-family: Calibri;
+    padding: 5px;
+    font-size: large;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+}
+table td:first-child 
+{
+border-left: none;
+}
+
+table td:last-child 
+{
+border-right: none;
+}
+th
+{
+    font-family:Calibri;
+    font-weight:bold;
+    color:white;
+    background-color:#59BD09;
+    opacity:0.8;
+    text-align:left;
+    height:30px;  
+    font-size:large; 
+    padding:5px;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+table th:first-child 
+{
+border-left: none;
+}
+table th:last-child 
+{
+border-right: none;
+}
+#name
+{
+    width:180px;
+}
+#city
+{
+    width:150px;
+}
+#country
+{
+    width:160px;
+}
+
+tr:nth-child(2n)
+{
+    background-color: #ECECD8;
+}
+.isPromoted
+{
+    width:120px;
+    height:40px;
+}
+.place
+{
+    vertical-align: super;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+﻿div
+{
+    width: 680px;
+}
+p
+{
+    font-family: Consolas, 'Edwardian Script ITC';
+    color: #0094ff;  
+}
+
+p:first-letter
+{
+    font-size: 1.8em;
+    font-family:'Edwardian Script ITC';
+    
+}
+p:first-line
+{
+    font-weight: bold;
+    line-height: 35px; 
+}
+    

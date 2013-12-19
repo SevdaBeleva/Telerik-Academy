@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>WindowsCalculator</title>
+    <link rel="stylesheet" type="text/css" href="StylesCalculator.css"/>
+</head>
+<body>
+    <div id="background">
+        <span id="calculator"> Calculator</span>     
+        
+    <div id="body"> 
+            <div id="menu"> 
+                <span class="underline">V</span><span>iew</span>
+                <span class="underline">E</span><span>dit</span>
+                <span class="underline">H</span><span>elp</span>
+            </div>
+            <form>
+                <input type="text" value="87125623" id="window"/>
+            </form>
+              
+            <div id="binaryWindow">
+                <div class="whiteBorder">
+                    <div id="firstLine"> 
+                        <span>0000</span>
+                        <span>0000</span>
+
+                        <span>0000</span>
+                        <span>0000</span>
+
+                        <span>0000</span>
+                        <span>0000</span>
+
+                        <span>0000</span>
+                        <span>0000</span>    
+                    </div>
+                    <div id="secondLine">
+                        <span class="numberLeft">63</span>
+                        <span class="numberCenter">47</span>
+                        <span class="numberRight">32</span>
+                    </div>
+                    <div id="thirdLine">
+                        <span>0000</span>
+                        <span>0000</span>
+
+                        <span>0000</span>
+                        <span>0000</span>
+
+                        <span>0000</span>
+                        <span>0000</span>
+
+                        <span>0000</span>
+                        <span>0000</span>
+                   </div>
+                   <div id="fourthLine">
+                        <span class="numberLeft">31</span>
+                        <span class="numberCenter">15</span>
+                        <span class="numberRight">0</span>
+                   </div>
+                   </div>
+            </div>
+
+            <div id="leftSide">
+            <div class="binaryWord">
+                <form>
+                    <span class="radio"><input type ="radio" name="numSys" value="Hex" id="hex" /> <label for="hex">Hex</label> <br/></span><br/>
+                    <span class="radio"><input type ="radio" name="numSys" value="Dex" checked="checked" id="dec"/> <label for="dec">Dec</label> </span>
+                    <span class="radio"><input type ="radio" name="numSys" value="Oct" id="oct" /> <label for="oct">Oct</label> </span>
+                    <span class="radio"><input type ="radio" name="numSys" value="Bin" id="bin" /> <label for="bin">Bin</label> </span>
+                </form> 
+            </div>
+            <div class="binaryWord1">
+                 <form> 
+                    <span class="radio"><input type ="radio" name="wordType" value="Qword" checked="checked" id="qword"/> <label for="qword">Qword</label> </span>
+                    <span class="radio"><input type ="radio" name="wordType" value="Dword" id="dword"/> <label for="dword">Dword</label> </span>
+                    <span class="radio"><input type ="radio" name="wordType" value="Word"  id="word"/> <label for="word">Word</label> </span>
+                    <span class="radio"><input type ="radio" name="wordType" value="Byte"  id="bte"/> <label for="byte">Byte</label> </span>
+                </form>
+            </div>
+            </div>
+
+            <div>
+                <table id="table">
+                    <tr>
+                        <td >
+                            <input type="button" value=" " class= "normal" disabled="disabled"/>
+
+                        </td>
+                        <td>
+                            <input type="button" value="Mod" class="darkGradient"/>
+
+                        </td>
+                        <td>
+                            <input type="button" value="A" class="normal" disabled="disabled" />
+                        </td>
+                        <td>
+                            <input type="button" value="MC" class="onlyWhiteBorder"/>
+
+                        </td>
+                        <td>
+                            <input type="button" value="MR" class="onlyWhiteBorder"/>
+
+                        </td>
+                        <td>
+                            <input type="button" value="MS" class="onlyWhiteBorder"/>
+                        </td>
+                        <td>
+                            <input type="button" value="M+" class="onlyWhiteBorder"/>
+                        </td>
+                        <td>
+                            <input type="button" value="M-" class="onlyWhiteBorder"/>
+                        </td>                  
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="(" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value=")" class="darkGradient"/>
+                        </td>
+                            
+                        <td>
+                            <input type="button" value="B " class="normal" disabled="disabled"/>
+                        </td>
+                        <td>
+                            <input type="button" value="←" class="darkGradient" id="arrow"/>
+                        </td>
+                        <td>
+                            <input type="button" value="CE" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="C" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="&#177" class="darkGradient" />
+                        </td>
+                        <td>
+                            <input type="button" value="√" class="normal" disabled="disabled"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="RoL" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="RoR" class="darkGradient"/>
+                        </td>
+                            
+                        <td>
+                            <input type="button" value="C" class="normal" disabled="disabled"/>
+                        </td>
+                        <td>
+                            
+                            <input type="button" value="7" class="lightGradient"/>
+                                
+                        </td>
+                        <td>
+                            <input type="button" value="8" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="9" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="/" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="%" class="normal" disabled="disabled"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="Or" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="Xor" class="darkGradient"/>
+                        </td>
+                            
+                        <td>
+                            <input type="button" value="D" class="normal" disabled="disabled"/>
+                        </td>
+                        <td>
+                            <input type="button" value="4" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="5" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="6" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="*" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="1/x" class="normal" disabled="disabled"/>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="Lsh" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="Rsh" class="darkGradient"/>
+                        </td>
+                            
+                        <td>
+                            <input type="button" value="E" class="normal" disabled="disabled"/>
+                        </td>
+                        <td>
+                            <input type="button" value="1" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="2" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="3" class="lightGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="-" class="darkGradient"/>
+                        </td>
+                        <td rowspan="2">
+                            <input type="button" value="=" class="darkGradient" id="buttonEqual"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="button" value="Not" class="darkGradient"/>
+                        </td>
+                        <td>
+                            <input type="button" value="And" class="darkGradient"/>
+                        </td>
+                            
+                        <td>
+                            <input type="button" value="F" class="normal" disabled="disabled"/>
+                        </td>
+                        <td colspan="2">
+                            <input type="button" value="0" class="lightGradient"id="button0"/>
+                        </td>
+                        
+                        <td>
+                            <input type="button" value="." class="normal" disabled="disabled"/>
+                        </td>
+                        <td>
+                            <input type="button" value="+" class="darkGradient"/>
+                        </td>   
+                    </tr>
+                </table>
+           </div> 
+        </div>
+   </div> 
+</body>
+</html>

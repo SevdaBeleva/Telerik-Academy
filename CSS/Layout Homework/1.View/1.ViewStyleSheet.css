@@ -1,0 +1,32 @@
+﻿.menu 
+{
+    overflow: hidden;
+    margin: .5em 0;
+    max-height: 1em;
+    -webkit-transition: max-height 500ms ease-out;
+    -moz-transition: max-height 500ms ease-out;
+    -o-transition: max-height 500ms ease-out;
+    transition: max-height 500ms ease-out;
+}
+ .menu:hover
+{ 
+    max-height: 10em; 
+}
+
+.menu dd
+{
+    margin-left: 1em;
+    color: #888;
+}
+
+.menu a 
+{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.menu a:hover 
+{ 
+    text-decoration: underline;
+  }
+   
