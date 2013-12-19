@@ -1,0 +1,238 @@
+<!Doctype html>
+<html>
+<head>
+	<title>
+		Grid Component
+	</title>
+	<style>
+		table
+		{
+			border-radius: 6px;	
+			border-color: Gainsboro;
+			border-spacing: 0px;
+			border-padding: 0px;
+
+			
+		}
+		.round-corners
+		{
+			border-bottom-left-radius: 6px;	
+			border-bottom-right-radius: 6px;
+		}
+		.head-round-corners
+		{
+			border-top-right-radius: 6px;
+			border-top-left-radius: 6px;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+		thead
+		{
+		  background: Gainsboro;
+		  text-align: left;
+		  font-family: calibri;
+		  font-size: 13px;
+		}
+		tfoot
+		{
+			background: Gainsboro;
+			font-family: calibri;
+			font-size: 13px;
+			border-top-right-radius:8px;
+		}
+		.align-button
+		{
+		vertical-align:middle;
+		 background:LightGrey;
+		}
+		.cell-size
+		{
+		  width:130px;
+		}
+	</style>	
+</head>
+<body>
+	<table border = "1">
+		<thead>
+			<tr>
+				<th class = "head-round-corners" colspan = "6"> Drag a column header and drop it here to.....</th>
+			</tr>
+			<tr>
+				<th>
+					ProductID
+				</th>
+				<th>
+					Product name
+				</th>
+				<th class = "cell-size">
+					Unit price
+				</th>
+				<th>
+					Quanity per unit
+				</th>
+				<th class = "cell-size">
+					Units in stock
+				</th>
+				<th>
+					Discontinued
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<input type = "text" name = "number" size = "2"/>
+				</td>
+				<td> 
+					<input type = "text" name = "name" /> 
+				</td>
+				<td> 
+					<input type = "text" name = "price" size = "6"/>
+					<input type = "image" class = "align-button" src = "./filterButton.jpg" width = "20" alt="filter button"/>
+				</td>
+				<td> 
+					<input type = "text" name = "quantity"/>
+				</td>
+				<td> 
+					<input type = "text" name = "units" size = "5"/>
+					<input type = "image" class = "align-button" src = "./filterButton.jpg" width = "20" alt="filter button"/>
+				</td>
+				<td> 
+					<input type = "checkbox"/>
+					<input type = "image" class = "align-button" src = "./filterButton.jpg" width = "20" alt="filter button"/>
+				</td>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr >
+				<td  class = "round-corners" colspan = "6">
+					<input type = "button" name = "arrowLeft1" value = "|<"/>
+					<input type = "button" name = "arrowLeft2" value = "<"/>
+					<a href = "http://www.telerik.com/" title = "telerik"> 1 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 2 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 3 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 4 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 5 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 6 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 7 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 8 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 9 </a>
+					<a href = "http://www.telerik.com/" title = "telerik"> 10 </a>
+					....
+					<input type = "button" name = "arrowRight1" value = ">"/>
+					<input type = "button" name = "arrowRigth2" value = ">|">
+					<label for = "pageSize"> Page size </label>
+					<select name = "pageSize" id = "pageSize">
+						<option value = "10" selected = "selected" > 10 </option>
+						<option value = "20" > 20 </option>
+						<option value = "30" > 30 </option>
+					</select>
+					678900 items in 679000 pages
+				</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Chai</td>
+				<td>$18</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td>
+				<input type = "checkbox"/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

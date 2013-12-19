@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Text Fields </title>
+</head>
+<body>
+	<form>
+		<label for = "memName"> Member Name: </label>
+		<input type = "text" name = "member name" id = "memName" required = "required" autocomplete= "on"
+		tabindex = "1"/> *req
+		<br/>
+		
+		<label for = "emailInput"> Email: </label>
+		<input type = "email"  id = "emailInput" required = "required" autocomplete= "on"
+		pattern = "[a-zA-Z0-9_\-\.]+\@[a-z0-9\.\-]+"
+		tabindex = "2"/> *req
+		<br/>
+			
+		<label for = "schoolInput"> School: </label>
+		<input type = "text" name= "school" id = "schoolInput" required = "required"  autocomplete= "on"
+		tabindex = "3"/> *req
+		<br/>
+			
+		<input type = "image" src = ".\imageSubmitButton.jpg"  width = "50" alt= "image submit button"
+		tabindex = "4"/>
+	</form>
+</body>
+</html>
