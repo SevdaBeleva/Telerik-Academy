@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFifteen.Demo", "GameFifteen.Demo\GameFifteen.Demo.csproj", "{A8D0AD34-6B41-4CAA-86A9-D0092A56C5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFifteen", "GameFifteen\GameFifteen.csproj", "{96532455-6D1C-4243-9BEA-81A8C51E573C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameFifteen.Test", "GameFifteen.Test\GameFifteen.Test.csproj", "{AFC95E5D-8090-4E11-A7FA-377062968BD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8D0AD34-6B41-4CAA-86A9-D0092A56C5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8D0AD34-6B41-4CAA-86A9-D0092A56C5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8D0AD34-6B41-4CAA-86A9-D0092A56C5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8D0AD34-6B41-4CAA-86A9-D0092A56C5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96532455-6D1C-4243-9BEA-81A8C51E573C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96532455-6D1C-4243-9BEA-81A8C51E573C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96532455-6D1C-4243-9BEA-81A8C51E573C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96532455-6D1C-4243-9BEA-81A8C51E573C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC95E5D-8090-4E11-A7FA-377062968BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC95E5D-8090-4E11-A7FA-377062968BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC95E5D-8090-4E11-A7FA-377062968BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC95E5D-8090-4E11-A7FA-377062968BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
