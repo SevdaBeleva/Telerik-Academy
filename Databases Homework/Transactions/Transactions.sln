@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transactions-in-ATM", "Transactions-in-ATM\Transactions-in-ATM.csproj", "{52E17789-4C4A-46D9-8543-B9BB54217918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM-Entities", "ATM-Entities\ATM-Entities.csproj", "{4AFA23CC-BD23-471D-89AA-2536A7DA06FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52E17789-4C4A-46D9-8543-B9BB54217918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E17789-4C4A-46D9-8543-B9BB54217918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E17789-4C4A-46D9-8543-B9BB54217918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E17789-4C4A-46D9-8543-B9BB54217918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFA23CC-BD23-471D-89AA-2536A7DA06FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFA23CC-BD23-471D-89AA-2536A7DA06FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFA23CC-BD23-471D-89AA-2536A7DA06FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFA23CC-BD23-471D-89AA-2536A7DA06FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<register>
+  <person>
+    <name>Stoyan Pavlov</name>
+    <address>bul.Vasil Levski 113</address>
+    <phoneNumber>0899123321</phoneNumber>
+  </person>
+</register>

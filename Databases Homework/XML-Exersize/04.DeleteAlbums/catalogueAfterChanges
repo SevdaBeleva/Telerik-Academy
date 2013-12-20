@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns="urn:albums">
+  <album>
+    <name>Songs</name>
+    <artist>Eminen</artist>
+    <year>1998</year>
+    <produser>Slim shaddy</produser>
+    <price>11.23</price>
+    <songs>
+      <title>8 mile</title>
+      <duration>9.67</duration>
+    </songs>
+  </album>
+  <album>
+    <name>Forever</name>
+    <artist>Stacy</artist>
+    <year>2008</year>
+    <produser>Slim shaddy</produser>
+    <price>122.23</price>
+    <songs>
+      <title>Young</title>
+      <duration>5.67</duration>
+    </songs>
+  </album>
+  <album>
+    <name>Forever</name>
+    <artist>Stacy</artist>
+    <year>2008</year>
+    <produser>Slim shaddy</produser>
+    <price>122.23</price>
+    <songs>
+      <title>Young</title>
+      <duration>5.67</duration>
+    </songs>
+  </album>
+</catalogue>

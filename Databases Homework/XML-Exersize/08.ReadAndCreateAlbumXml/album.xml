@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Albums name="album">
+	<album>
+		<name>Final Destination</name>
+		<artist>Blue bear</artist>
+	</album>
+	<album>
+		<name>Songs</name>
+		<artist>Eminen</artist>
+	</album>
+	<album>
+		<name>Forever</name>
+		<artist>Stacy</artist>
+	</album>
+	<album>
+		<name>Forever</name>
+		<artist>Stacy</artist>
+	</album>
+</Albums>

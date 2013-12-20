@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students xmlns="urn:students">
+	<student>
+		<name>Ivan</name>
+		<sex>male</sex>
+		<birthdate>12.02.1988</birthdate>
+		<phone>0889000111</phone>
+		<email>email@gmail.com</email>
+		<course>3</course>
+		<specialty>Math</specialty>
+		<facultyNumber>123456678</facultyNumber>
+		<exams>
+			<examName>C#</examName>
+			<tutor>Kostov</tutor>
+			<score>12</score>
+		</exams>
+	</student>
+	<student>
+		<name>Gosho</name>
+		<sex>male</sex>
+		<birthdate>24.05.1988</birthdate>
+		<phone>0899234567</phone>
+		<email>email@gmail.com</email>
+		<course>2</course>
+		<specialty>Computer science</specialty>
+		<facultyNumber>213456987</facultyNumber>
+		<exams>
+			<examName>PHP</examName>
+			<tutor>Nakov</tutor>
+			<score>212</score>
+		</exams>
+	</student>
+</students>	
