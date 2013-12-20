@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soup", "Soup\Soup.csproj", "{E85B01A4-719D-45A4-95BD-6725A9DF24CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfStatement", "IfStatement\IfStatement.csproj", "{8A830692-0234-4AC4-9383-402717CC911E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopRefactoring", "LoopRefactoring\LoopRefactoring.csproj", "{C6D5082C-A780-4128-9B61-3431E8827DA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E85B01A4-719D-45A4-95BD-6725A9DF24CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85B01A4-719D-45A4-95BD-6725A9DF24CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85B01A4-719D-45A4-95BD-6725A9DF24CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85B01A4-719D-45A4-95BD-6725A9DF24CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A830692-0234-4AC4-9383-402717CC911E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A830692-0234-4AC4-9383-402717CC911E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A830692-0234-4AC4-9383-402717CC911E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A830692-0234-4AC4-9383-402717CC911E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D5082C-A780-4128-9B61-3431E8827DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D5082C-A780-4128-9B61-3431E8827DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D5082C-A780-4128-9B61-3431E8827DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D5082C-A780-4128-9B61-3431E8827DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

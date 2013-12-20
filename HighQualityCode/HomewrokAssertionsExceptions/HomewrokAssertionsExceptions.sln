@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assertions", "Assertions\Assertions.csproj", "{ED87473A-0D1B-4171-81F0-AFF63FDC1691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{3F3B5D01-E1F4-4223-AF4C-F1073FD7DFEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED87473A-0D1B-4171-81F0-AFF63FDC1691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED87473A-0D1B-4171-81F0-AFF63FDC1691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED87473A-0D1B-4171-81F0-AFF63FDC1691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED87473A-0D1B-4171-81F0-AFF63FDC1691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3B5D01-E1F4-4223-AF4C-F1073FD7DFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3B5D01-E1F4-4223-AF4C-F1073FD7DFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3B5D01-E1F4-4223-AF4C-F1073FD7DFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3B5D01-E1F4-4223-AF4C-F1073FD7DFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

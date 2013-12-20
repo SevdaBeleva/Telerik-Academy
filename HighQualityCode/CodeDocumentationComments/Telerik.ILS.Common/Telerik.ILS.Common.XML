@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.ILS.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.ILS.Common.StringExtensions">
+            <summary>
+            Contains set of methods extending System.String class 
+            <see cref="!:http://msdn.microsoft.com/en-us/library/system.string_methods.aspx"/>
+            The XML documentation comments in the current file are made considering MSDN recommended tags
+            <seealso cref="!:http://msdn.microsoft.com/en-us/library/5ast78ax.aspx"/>
+            </summary>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToMd5Hash(System.String)">
+            <summary>
+            Converts string into MD5Hash. The MD5 Message-Digest Algorithm is a widely used cryptographic hash function
+            <see cref="!:http://en.wikipedia.org/wiki/MD5"/>&gt;
+            </summary>
+            <param name="input">string that will be converted into MD5Hash</param>
+            <returns>128-bit (16-byte) hash value</returns>
+            <example>
+            Shows how to use ToMd5Hash method
+            <code>
+            class TestProgram 
+            {
+                static void Main()
+                {
+                    string input = "Convert this string";
+                    Console.WriteLine(input.ToMd5Hash());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToBoolean(System.String)">
+            <summary>
+            Check if the string value can be asigned to boolean type 
+            </summary>
+            <param name="input">string - to be checked</param>
+            <returns>True or False</returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "да";
+                    ConsoleWriteLine(value.ToBoolean());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToShort(System.String)">
+            <summary>
+            Converts string value into short type
+            </summary>
+            <param name="input">string that will be converted into short type</param>
+            <returns>short value or 0 </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "124";
+                    ConsoleWriteLine(value.ToShort());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToInteger(System.String)">
+            <summary>
+            Converts string value into integer type
+            </summary>
+            <param name="input">string that will be converted into integer type</param>
+            <returns>integer value or 0 </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "124567";
+                    ConsoleWriteLine(value.ToInteger());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToLong(System.String)">
+            <summary>
+            Converts string value into long type
+            </summary>
+            <param name="input">string that will be converted into long type</param>
+            <returns>long value or false </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "1241256";
+                    ConsoleWriteLine(value.ToLong());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToDateTime(System.String)">
+            <summary>
+            Converts string value into DateTime type
+            </summary>
+            <param name="input">string that will be converted into DateTime type</param>
+            <returns>DateTime value or false </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "12.11.2012";
+                    ConsoleWriteLine(value.DateTime());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.CapitalizeFirstLetter(System.String)">
+            <summary>
+            Converts the first letter to upper case
+            </summary>
+            <param name="input">string value</param>
+            <returns>string value </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "test";
+                    ConsoleWriteLine(value.CapitalizeFirstLetter());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Get the substring
+            </summary>
+            <param name="input">string value</param>
+            <returns>string value </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "do some test";
+                    ConsoleWriteLine(value.GetStringBetween());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ConvertCyrillicToLatinLetters(System.String)">
+            <summary>
+            Converts cyrillic to latin letters
+            </summary>
+            <param name="input">string value</param>
+            <returns>string value </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "тествай";
+                    ConsoleWriteLine(value.ConvertCyrillicToLatinLetters());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)">
+            <summary>
+            Converts latin to cyrillic keyboard
+            </summary>
+            <param name="input">string value</param>
+            <returns>string value </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "test";
+                    ConsoleWriteLine(value.ConvertLatinToCyrillicKeyboard());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToValidUserName(System.String)">
+            <summary>
+            Converts string into valid user name
+            </summary>
+            <param name="input">string value</param>
+            <returns>string value </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "some@email_email@abv.bg";
+                    ConsoleWriteLine(value.ToValidUserName());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToValidLatinFileName(System.String)">
+            <summary>
+            Get the substring
+            </summary>
+            <param name="input">string value</param>
+            <returns>string value </returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "do some test";
+                    ConsoleWriteLine(value.ToValidLatinFileName());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.GetFirstCharacters(System.String,System.Int32)">
+            <summary>
+            Get first characters from a string value
+            </summary>
+            <param name="input">string value</param>
+            <param name="charsCount">int value, shows how many characters will be taken</param>
+            <returns>string value</returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "get some characters";
+                    ConsoleWriteLine(value.GetFirstCharacters());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.GetFileExtension(System.String)">
+            <summary>
+            Get the file extension. Check if the string is null or empty
+            </summary>
+            <param name="fileName">string value</param>
+            <returns>file extension in string value</returns>
+            <example>
+            <code>
+            class TestMethods
+            {
+                static void Main()
+                {
+                    string value = "getFileExtensions.cs";
+                    ConsoleWriteLine(value.GetFileExtension());
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToContentType(System.String)">
+            <summary>
+            Get the content type of the specified file extension
+            </summary>
+            <param name="fileExtension"></param>
+            <returns>content type in var type</returns>
+            <example>
+            <code>
+            class TestClass
+            {
+            static void Main()
+            {
+            string value = "png";
+            Console.WriteLine(value.ToContentType());
+            }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Telerik.ILS.Common.StringExtensions.ToByteArray(System.String)">
+            <summary>
+            Convert string into array of bytes
+            </summary>
+            <param name="input">string value</param>
+            <returns>array of bytes containing characters</returns>
+        </member>
+    </members>
+</doc>
