@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#"
+    MasterPageFile="~/Site.Master" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderMainPage" id="ContentPage"  runat="server">
+    <header id="header-en">England</header>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderEngland" runat="server" />
+    <aside id="sidebar">
+        <ul>
+            <li><a href="Home.aspx" runat="server">Home</a></li>
+            <li><a href="About.aspx" runat="server">About</a></li>
+            <li><a href="Contacts.aspx" runat="server">Contacts</a></li>          
+        </ul>
+    </aside>
+</asp:Content>

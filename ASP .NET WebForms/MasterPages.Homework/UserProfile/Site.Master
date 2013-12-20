@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" 
+    AutoEventWireup="true" 
+    CodeBehind="Site.master.cs" 
+    Inherits="MasterPages.Homework.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header id="header">Kolin Kolinov</header>
+    <aside id="sidebar">
+        <ul>
+            <li><a href="~/Home.aspx" runat="server">Home</a></li>
+            <li><a href="~/PersonalInfo.aspx" runat="server">Personal Info</a></li>
+            <li><a href="~/Friends.aspx" runat="server">Friends</a></li>
+            <li><a href="~/AdditionalInfo.aspx" runat="server">Additional Info</a></li>
+        </ul>
+    </aside>
+    <form id="form1" runat="server"> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+              
+        </asp:ContentPlaceHolder>
+    </form>
+    <footer>(c) 2013 EBT</footer> 
+</body>
+</html>
