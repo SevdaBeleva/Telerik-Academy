@@ -1,0 +1,17 @@
+﻿BOOK
+Angels & Demons,Dan Brown,1,1,true
+Thirteen Reasons Why,Jay Asher,2,10,true
+The Fault in Our Stars,John Green,3,1,false
+MUSIC
+Impressive Instant,Warner Bros,Madonna,DVD,4,2,true
+Runaway Lover,Warner Bros,Madonna,CD,5,1,false
+Gone,Warner Bros,Madonna,DVD,6,11,true
+GAMES
+Football manager 2013,Sports Interactive,DVD,Xbox,PGR12,827894097,20,true
+Counter strike 1.6,Valve,CD,Sega,PGR14,7,1,false
+VIDEO
+Wanted (2008),Universal Pictures,BlyRay,PGR14,8,2,true
+Inception (2010),Warner Bros. Pictures,DVD,PGR12,9,1,false
+Iron Man 3 (2013),Marvel Studios,DVD,PGR12,10,12,true
+PAPER
+Standart,18.03.2003,7520,120,2321312312,5,5

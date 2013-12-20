@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Test Data</title>
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
+    </head>
+    <body>
+        
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            
+            <a class="brand" href="#">JS Project Manager</a>
+
+            <div id="buttonSet" class="nav-collapse collapse pull-right">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+        
+        <div class="form-container">
+            <form class="intro-form visible" id="user_login" method="POST">
+                <label for="name">Username:</label>
+                    <input type="text" name="username">
+                <label for="username">Password:</label>
+                    <input type="password" name="userpass">
+                <div id="lower">
+                    <input class="btn btn-primary" type="submit" value="Log in">
+                </div>
+            </form>
+        </div>
+        
+        
+       <div class="form-container">
+            <form class="intro-form" id="user_registration" method="POST">
+                <label for="name">Username:</label>
+                    <input type="text" name="username">
+                <label for="username">Password:</label>
+                    <input type="password" name="userpass">
+                <label for="fname">First name</label>
+                    <input type="text" name="fname">
+                <label for="lname">Last name</label>
+                    <input type="text" name="lname">                    
+                <div id="lower">
+                    <input class="btn btn-primary" type="submit" value="Registration">
+                </div>
+            </form>
+        </div>
+        
+        
+             <!-- MODAL FOR CREATING NEW PROJECT -->
+        
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <form id="new_project" method="POST">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Create New Project</h3>
+          </div>
+      
+      <div class="modal-body">
+        
+            <label for="#">Project Name</label>
+                <input type="text" name="projectname">
+            <label for="#">Project Description</label>
+                <input type="text" name="projectdesc">
+            
+      </div>
+      <div class="modal-footer">
+        <input type="submit" value="send data">
+      </div>
+        </form>
+    </div>
+        
+    <!-- MODAL FOR CREATING NEW TRACK -->     
+        
+    <div id="myModalTrack" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      
+        <form id="new_track" method="POST">
+        
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Create New Track</h3>
+            </div>
+          
+          <div class="modal-body">
+
+                <label for="#">Track Name</label>
+                    <input type="text" name="trackname">
+
+          </div>
+            
+          <div class="modal-footer">
+                <input  aria-hidden="true" type="submit" value="send data">
+          </div>
+
+      </form>
+    </div>   
+    
+    
+        <!-- MODAL FOR CREATING NEW TRACK -->     
+        
+    <div id="myModalItem" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      
+        <form id="new_item" method="POST">
+        
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Set New Item</h3>
+            </div>
+          
+          <div class="modal-body">
+
+                <label for="#">Item Content:</label>
+                    <input type="text" name="itemcontent">
+          </div>
+            
+          <div class="modal-footer">
+                <input  aria-hidden="true" type="submit" value="send data">
+          </div>
+
+      </form>
+    </div> 
+        
+        <div id="placeholder"></div>
+        <div id="track-placeholder"></div>
+        <div id="item-placeholder"></div>
+        
+                
+        <!-- External Libs -->
+        <script src="libs/jquery.js"></script>
+        <script src="libs/modula.js"></script>
+        <script src="script/session/sessionObject.js"></script>
+        
+        <!-- Event Class -->
+        <script src="script/event/Event.js"></script>
+        
+        <!-- View Class -->
+        <script src="script/view/View.js"></script>
+        
+        <!-- Controller Class -->
+        <script src="script/controller/Controller.js"></script>
+
+        <!-- DataRequest Class Model - View Communication -->
+        <script src="script/data/Data.js"></script>
+        
+        <!-- Model data -->
+        <script src="script/model/user/UserObject.js"></script>
+        
+        <script src="script/model/system/ProjectObject.js"></script>
+        <script src="script/model/system/TrackObject.js"></script>
+        <script src="script/model/system/EntryObject.js"></script>
+        
+        <!-- Initialise execution sript -->
+        <script src="helper/ui_control.js"></script>
+        <script src="script/init.js"></script>
+        <script src="style/bootstrap/js/bootstrap.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TODOList</title>
+    <script src="scripts/jquery-1.10.1.js"></script>
+    <script src="scripts/toDoList.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>To Do List</h1>
+		<button id="complete"></button>
+		<button id="delete"></button>
+		<ol id="toDoList" contenteditable=true >
+		</ol>
+		<textarea id="text"></textarea>
+		<button id="add">Add</button>
+		<button id="save">Save Changes</button>   
+  </div>
+<script>
+    var newTask = new ToDoList('#text', '#toDoList');
+	
+	$('#add').on('click', function () {
+		newTask.addTask();
+	});
+	$('#delete').on('click', function () {
+		newTask.deleteTask();
+	});
+	$(document).on('click', '#complete', function () {
+		newTask.completeTask();
+	});
+	newTask.saveLocalStorage('#save');		
+	
+</script>
+</body>
+</html>

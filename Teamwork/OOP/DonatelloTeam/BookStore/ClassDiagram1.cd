@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookStore.Exceptions.MoreUnitsThanDefinedException" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\MoreUnitsThanDefinedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Exceptions.NotRentableException" Collapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\NotRentableException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Exceptions.OutOfStockException" Collapsed="true">
+    <Position X="22.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\OutOfStockException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BookStoreMain" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BookStoreMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Items.Book" Collapsed="true">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAEAEgEAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Book.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.Items.BookStoreItem" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQAAAAEAAAAEAEABAAAAACAQAAAAEAAQEAEAEgA=</HashCode>
+      <FileName>Items\BookStoreItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.Items.Games" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAACAAAAAgAAAA=</HashCode>
+      <FileName>Items\Games.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Items.Magazines" Collapsed="true">
+    <Position X="16" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAMAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Magazines.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Items.Multimedia" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABAAAAgQAIAAEEEAEAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Items\Multimedia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Items.Music" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgEAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Music.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.Items.Paper" Collapsed="true">
+    <Position X="18.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEIEAAAAAAAAAAQAAIAEAAAAAAAAA=</HashCode>
+      <FileName>Items\Paper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Items.Press" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAQAAAAEAEAECAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Items\Press.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Items.Video" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Video.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.Collection.ItemList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIIAAAAAABQCBAQCGAABAwAAAQAAAAAQgAAAABwIAA=</HashCode>
+      <FileName>Collection\ItemList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="BookStore.Interfaces.IAuthored" Collapsed="true">
+    <Position X="20.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAuthored.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BookStore.Interfaces.IRentable" Collapsed="true">
+    <Position X="22.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Interfaces\IRentable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

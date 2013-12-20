@@ -1,0 +1,109 @@
+html, body, div, span, 
+h1, h2, p, a, b, u, i, center, ol, ul, li
+fieldset, form, label, article, 
+aside, footer, header, hgroup, 
+menu, nav,  
+/*don't know why these mattera to the li margin - audio, video*/
+audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+#wrapper{
+	width: 350px;
+	height: 100%;
+	border: 3px solid #565655;
+	border-radius: 5px;
+	margin: 5px;
+}
+h1{
+	border-bottom: 1px solid #565655;
+	text-align: center;
+	height: 50px;
+	margin-top: 0;
+	padding-top: 7px;
+	background: #83cc23;
+	color: white;
+	font-family:Arial;
+	font-size: 30px;
+	font-weight: bold;
+}
+#complete{
+	margin-left: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 48px;	
+	height: 48px;
+	border: none;
+	background: url('images/complete-icon.png')no-repeat;
+}
+#delete{
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 48%;	
+	height: 48px;
+	border: none;
+	background: url('images/delete-icon.png') no-repeat;
+}
+#toDoList {
+	width: 345px;
+	word-wrap: break-word;
+}
+#toDoList li{
+	list-style: none;
+	font-family:Arial;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 10px;
+	padding-top: 12px;
+	border: 1px solid #565655;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+#toDoList li:last-of-type{
+	border-bottom: 1px solid #565655;
+}
+#text{
+	margin-top: 35px;
+	margin-left: 5px;
+	width: 95%;
+	border: 2px solid #83cc23;;
+}
+#add{
+	width: 35%;	
+	height: 40px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	border: 1px solid #565655;
+	background: #83cc23;
+	color: white;
+	font-family:Arial;
+	font-size: 25px;	
+}
+#save{
+    width: 55%;	
+	height: 40px;
+	margin-left: 20px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+	border: 1px solid #565655;
+	background: #83cc23;
+	color: white;
+	font-family:Arial;
+	font-size: 25px;	
+}
