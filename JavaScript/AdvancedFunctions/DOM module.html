@@ -1,0 +1,32 @@
+<!doctype html5>
+<html>
+<head>
+	<title>
+		DOM module
+	</title>
+	<!--Test the DOM module/first task-->
+	<!--Add some style to the elements to see the changes-->
+	<style>
+		#first{
+		width:150px;
+		height:100px;
+		background-color:red;
+		}
+	</style>
+	<script type="text/javascript" src="moduleDOM.js"></script>
+</head>
+<body>
+	<!--Test the DOM module/first task-->
+	<!--Create some elements to test some of the methods from DOM module-->
+	<div id="first">
+	<button type ="button" id="myButton" onclick = "moduleDom.attachEvent('myButton', 'onclick', moduleDom.hello())">Click me!</button>
+	</div>
+	<div id="second">i don't give a fuck!!!</div>
+	<!--We can use the module in script tag only-->
+	<script>
+		moduleDom.addChildElement('div', 'p');
+		<!--Comment/Uncomment to see the changes>
+		moduleDom.removeElement('div', 'p'); 
+	</script>	
+</body>
+</html>
